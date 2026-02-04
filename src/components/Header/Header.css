@@ -1,0 +1,16 @@
+.nav-el a {
+    height: 100px;
+    width: 100px;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+}
