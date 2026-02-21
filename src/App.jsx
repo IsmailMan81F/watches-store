@@ -2,7 +2,7 @@ import Navbar from "./components/layout/Navbar";
 
 const App = () => {
   return (
-    <main>
+    <main className="w-full">
       <Navbar />
     </main>
   );

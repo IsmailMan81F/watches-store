@@ -18,11 +18,11 @@ const Navbar = () => {
     </li>
   ));
 
-  const [gender, setGender] = useState(true);
+  const [man, setMan] = useState(true);
   //MAN : true, WOMAN: false
 
   return (
-    <nav className="flex w-full justify-between xl:justify-normal items-center py-6 xl:py-[2vw] px-6 md:px-[8vw] xl:px-[3vw]">
+    <nav className="sticky backdrop-blur-sm top-0 z-30 flex w-full justify-between xl:justify-normal items-center py-6 xl:py-[2vw] px-6 md:px-[8vw] xl:px-[3vw]">
       <div className="flex gap-[2vw] md:gap-6.5">
         <button className="w-8.5 cursor-pointer">
           <img src={hamburger} alt="menu" />
@@ -34,16 +34,16 @@ const Navbar = () => {
       <div className="hidden xl:flex gap-[5vw] text-white text-3xl justify-between flex-1 px-20">
         <a
           href="#men"
-          className={`border-b-4 border-transparent transition-colors ${gender && "border-white"}`}
-          onClick={() => setGender(true)}
+          className={`border-b-4 border-transparent transition-colors ${man && "border-white"}`}
+          onClick={() => setMan(true)}
         >
           MEN
         </a>{" "}
         {/** put : ml-auto to push to left */}
         <a
           href="#women"
-          className={`border-b-4 border-transparent transition-colors ${!gender && "border-white"}`}
-          onClick={() => setGender(false)}
+          className={`border-b-4 border-transparent transition-colors ${!man && "border-white"}`}
+          onClick={() => setMan(false)}
         >
           WOMEN
         </a>{" "}
